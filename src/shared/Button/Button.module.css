@@ -1,0 +1,18 @@
+.button {
+  border-radius: 6px;
+  padding: 8px 30px;
+  border: none;
+  width: 100%;
+}
+
+.blue {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+}
