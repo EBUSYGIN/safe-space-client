@@ -1,12 +1,44 @@
 :root {
-  font-family: "Source Sans Pro", sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  --black: #181818;
-  --white: #ffffff;
-  --blue: #312eb5;
-  --light-gray: rgba(255, 255, 255, 0.6);
-  --dark-gray: rgba(255, 255, 255, 0.4);
+    font-family: var(--font-family);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --black: #181818;
+    --white: #ffffff;
+    --pure-black: #000000;
+
+    --blue: #312eb5;
+    --light-blue: #a7a3ff;
+    --blue-muted: rgba(49, 46, 181, 0.15);
+
+    --light-gray: rgba(255, 255, 255, 0.6);
+    --dark-gray: rgba(255, 255, 255, 0.4);
+    --white-90: rgba(255, 255, 255, 0.9);
+    --white-80: rgba(255, 255, 255, 0.8);
+    --white-50: rgba(255, 255, 255, 0.5);
+
+    --secondary-gray: rgba(255, 255, 255, 0.03);
+    --input-gray: rgba(255, 255, 255, 0.02);
+    --border-gray: rgba(255, 255, 255, 0.1);
+    --white-hidden: #ffffff;
+
+    --blue-hover: #3936c1;
+    --secondary-gray-hover: rgba(255, 255, 255, 0.06);
+
+    --font-family: "Source Sans Pro", sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 32px;
+
+    --letter-spacing: 0;
 }

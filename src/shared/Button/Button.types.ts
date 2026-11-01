@@ -5,5 +5,6 @@ export interface IButtonProps extends React.DetailedHTMLProps<
   HTMLButtonElement
 > {
   icon?: IconType;
-  color: "blue" | "ghost";
+  appereance?: "primary" | "secondary" | "ghost";
+  size?: "s" | "m" | "l";
 }
