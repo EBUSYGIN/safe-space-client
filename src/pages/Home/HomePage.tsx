@@ -5,7 +5,18 @@ export function HomePage() {
   return (
     <div>
       <Header />
-      <Input label="Имя" icon="Folder" placeholder="Папки" />
+      <Input
+        label="Дата"
+        icon="Calendar"
+        placeholder="Дата"
+        appearance="unboxed"
+      />
+      <Input
+        label="Папка"
+        icon="Folder"
+        placeholder="Папка"
+        appearance="unboxed"
+      />
     </div>
   );
 }

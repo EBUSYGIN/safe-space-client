@@ -15,8 +15,24 @@ export function Input({
   const IconComponent = icon && Icon[icon];
   const inputId = useId();
 
+  if (appearance === "unboxed") {
+    return (
+      <div className={styles.unboxedWrapper}>
+        {IconComponent && <IconComponent />}
+        <label className={styles.label} htmlFor={inputId}>
+          {label}
+        </label>
+        <input
+          name={name}
+          id={inputId}
+          placeholder={placeholder}
+          className={cn(styles.input, styles.unboxedInput, styles[appearance])}
+        />
+      </div>
+    );
+  }
   return (
-    <div className={styles.wrapper}>
+    <div className={cn(styles.wrapper)}>
       <label className={styles.label} htmlFor={inputId}>
         {label}
       </label>

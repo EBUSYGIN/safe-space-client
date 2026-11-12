@@ -10,6 +10,7 @@
 
 .label {
     color: var(--light-gray);
+    min-width: 100px;
 }
 
 .icon {
@@ -38,13 +39,19 @@
     border-radius: 3px;
 }
 
-.unboxed {
-    border: none;
-    background-color: var(--black);
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
 .hasIcon {
     padding-left: 42px;
+}
+
+.unboxedWrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.unboxedInput {
+    padding: 15px;
+    border: none;
+    background-color: var(--black);
 }
