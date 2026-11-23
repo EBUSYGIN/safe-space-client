@@ -32,6 +32,15 @@
     background-color: var(--input-gray);
     display: flex;
     flex-direction: column;
+    transform-origin: top;
+    transition:
+        opacity 150ms ease,
+        transform 150ms ease;
+}
+
+.selectOptions[data-closed] {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
 }
 
 .selectOption {

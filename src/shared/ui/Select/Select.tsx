@@ -27,7 +27,11 @@ export function Select({
           {selectedOption?.name}
           {IconComponent && <IconComponent />}
         </ListboxButton>
-        <ListboxOptions anchor="bottom" className={styles.selectOptions}>
+        <ListboxOptions
+          anchor="bottom"
+          className={styles.selectOptions}
+          transition
+        >
           {options.map((option) => (
             <ListboxOption
               key={option.value}
